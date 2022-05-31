@@ -22,11 +22,13 @@ const dataBelanjaan = [
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = function (dataBelanja) {
+  const outputBelanjaan = [];
   for (let index = 0; index < dataBelanja.length; index++) {
-    console.log(
-      `- ${dataBelanja[index].nama} x ${dataBelanja[index].kuantitas}`
-    );
+    outputBelanjaan[
+      index
+    ] = `- ${dataBelanja[index].nama} x ${dataBelanja[index].kuantitas}`;
   }
+  return outputBelanjaan;
 };
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
